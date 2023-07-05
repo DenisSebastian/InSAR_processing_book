@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "a8a2d023"
+  },
+  "intro.qmd": {
+    "intro.html": "c7c8a787"
+  },
+  "summary.qmd": {
+    "summary.html": "76be3fec"
+  },
+  "references.qmd": {
+    "references.html": "e0524b04"
+  },
+  "problema.qmd": {
+    "problema.html": "5f510879"
+  },
+  "objetivos.qmd": {
+    "objetivos.html": "37508e97"
+  },
+  "pipeline.qmd": {
+    "pipeline.html": "788018d7"
+  },
+  "glosario.qmd": {
+    "glosario.html": "99caa1ca"
+  },
+  "softwares.qmd": {
+    "softwares.html": "d813981e"
+  },
+  "interf.qmd": {
+    "interf.html": "b2fbe68e"
+  }
+}

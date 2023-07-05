@@ -1,0 +1,35 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "InSAR Book"
+  subtitle: "InSAR Processing"
+  # affiliation: "Universidad Adolfo Ibáñez - Chile"
+  author: "Denis Berroeta González (denis.berroeta@uai.cl)"
+  date: "2023-07-04"
+  page-footer:
+    left: "Copyright 2022, Denis Berroeta"
+  chapters:
+    - index.qmd
+    - problema.qmd
+    - objetivos.qmd
+    - interf.qmd
+    - pipeline.qmd
+    - references.qmd
+  appendices:
+    - glosario.qmd
+    - softwares.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    html-math-method: katex
+    css: styles/style.css
+    fig-cap-location: "margin"
+    tab-cap-location: "bottom"
+    fig-align: "center"
+    mailto: "denis.berroeta@uai.cl"
+
