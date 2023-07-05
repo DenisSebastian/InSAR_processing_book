@@ -4,7 +4,7 @@ project:
 
 book:
   title: "InSAR Book"
-  subtitle: "InSAR Processing"
+  subtitle: "Interferometry (InSAR) Processing"
   # affiliation: "Universidad Adolfo Ibáñez - Chile"
   author: "Denis Berroeta González (denis.berroeta@uai.cl)"
   date: "2023-07-04"

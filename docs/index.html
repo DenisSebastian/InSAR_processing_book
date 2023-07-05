@@ -67,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -175,12 +175,12 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">InSAR Book</h1>
-<p class="subtitle lead">InSAR Processing</p>
+<p class="subtitle lead">Interferometry (InSAR) Processing</p>
 </div>
 
 
@@ -207,9 +207,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introducción" class="level1" data-number="1">
+<section id="introducción" class="level1 page-columns page-full" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introducción</h1>
-<p>Este libro tiene por por objetivo ir documentando y comunicando los avances en el repoceso de replicar el flujo de trabajado de corrección de imagenes tipo Radar de Apertura Sintética (SAR) en python en el proceso de interferometría.</p>
+<p>Este libro tiene por por objetivo ir documentando y comunicando los avances en el repoceso de replicar el flujo de trabajado de corrección de imagenes tipo Radar de Apertura Sintética (SAR) en python en el proceso de interferometría (InSAR).</p>
+<p>Los datos SAR también pueden permitir un método de análisis denominado interferometría o InSAR. InSAR utiliza la información de fase registrada por el sensor para medir la distancia del sensor al objetivo. Cuando se realizan al menos dos observaciones del mismo objetivo, la distancia, con información geométrica adicional del sensor, puede utilizarse para medir los cambios en la topografía de la superficie terrestre. Estas mediciones son muy precisas (hasta el nivel de centímetros) y pueden utilizarse para identificar zonas de deformación debidas a fenómenos como erupciones volcánicas y terremotos.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/interferogram_Oaxaca2018.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Interferogram from Sentinel-1 SAR data acquired 2018/02/17 and 02/05 shows earthquake fault slip on a subduction thrust fault causing up to 40 cm of uplift of the ground surface. The motion has been contoured with 9 cm color contours, also known as fringes. Credit: NASA Disasters Program.</figcaption>
+</figure>
+</div>
 <p><strong>Preguntas:</strong></p>
 <ul>
 <li>Problema</li>

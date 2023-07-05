@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>InSAR Book - 4&nbsp; Interferometría</title>
+<title>InSAR Book - 4&nbsp; Marco Conceptual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,11 +62,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -75,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./interf.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interferometría</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./interf.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Conceptual</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -121,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./interf.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interferometría</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Conceptual</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -165,14 +168,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
+  <li><a href="#radar-de-apertura-sintética" id="toc-radar-de-apertura-sintética" class="nav-link" data-scroll-target="#radar-de-apertura-sintética"><span class="header-section-number">4.2</span> Radar de Apertura Sintética:</a></li>
+  <li><a href="#frecuencia-y-longitud-de-onda" id="toc-frecuencia-y-longitud-de-onda" class="nav-link" data-scroll-target="#frecuencia-y-longitud-de-onda"><span class="header-section-number">4.3</span> Frecuencia y longitud de onda</a></li>
+  <li><a href="#mecanismos-de-polarización-y-dispersión" id="toc-mecanismos-de-polarización-y-dispersión" class="nav-link" data-scroll-target="#mecanismos-de-polarización-y-dispersión"><span class="header-section-number">4.4</span> Mecanismos de polarización y dispersión</a></li>
+  <li><a href="#interferometría" id="toc-interferometría" class="nav-link" data-scroll-target="#interferometría"><span class="header-section-number">4.5</span> Interferometría</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">4.6</span> Referencias:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interferometría</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Marco Conceptual</span></h1>
 </div>
 
 
@@ -187,15 +201,158 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="https://prs.dgf.uchile.cl/observatorio-g-data/insar/" class="uri">https://prs.dgf.uchile.cl/observatorio-g-data/insar/</a></p>
-<p>A SAR signal contains amplitude and phase information. Amplitude is the strength of the radar response and phase is the fraction of one complete sine wave cycle (a single SAR wavelength). The phase of the SAR image is determined primarily by the distance between the satellite antenna and the ground targets.</p>
-<p>Interferometric SAR (InSAR) exploits the phase difference between two complex radar SAR observations of the same area, taken from slightly different sensor positions, and extracts distance information about the Earth’s terrain.</p>
-<p>By combining the phase of these two images after coregistration, an interferogram can be generated where phase is highly correlated to the terrain topography and deformation patterns can be mapped. If the phase shift related to topography is removed from the interferograms, the difference between the resulting products will show surface deformation patterns occurred between the two acquisition dates. This methodology is called Differential Interferometry (DInSAR).</p>
-<p>The following interferogram of Bam, Iran shows the terrain deformation following a M6.6 earthquake on December 26th 2003, which killed 26,271 people and injured an additional 30,000. The images were acquired from ENVISAT ASAR on December 3rd 2003 and February 11th 2004 with a baseline (spatial separation between satellite orbits) of 14 m. The coloured fringes map the deformation of the surface of the Earth in the direction of the view from the satellite in units of the radar wavelength (2.8 cm) between colour cycles.</p>
-<p>References</p>
-<p><a href="https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/product-overview/interferometry" class="uri">https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/product-overview/interferometry</a></p>
+<section id="introduction" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Aunque la mayoría de los científicos que utilizan la teledetección están familiarizados con las imágenes ópticas pasivas del Landsat del Servicio Geológico de Estados Unidos, el espectrorradiómetro de imágenes de resolución moderada (MODIS) de la NASA y el Sentinel-2 de la Agencia Espacial Europea, como por ejemplo, hay otro tipo de datos de teledetección que está llamando la atención: El radar de apertura sintética o SAR. El SAR es un tipo de adquisición de datos activa en la que un sensor produce su propia energía y registra la cantidad de energía reflejada tras interactuar con la Tierra. Mientras que las imágenes ópticas son similares a la interpretación de una fotografía, los datos SAR requieren una forma diferente de pensar, ya que la señal responde a las características de la superficie, como la estructura y la humedad.</p>
+</section>
+<section id="radar-de-apertura-sintética" class="level2 page-columns page-full" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="radar-de-apertura-sintética"><span class="header-section-number">4.2</span> Radar de Apertura Sintética:</h2>
+<p>La resolución espacial de los datos de radar está directamente relacionada con la relación entre la longitud de onda del sensor y la longitud de la antena del sensor. Para una longitud de onda dada, cuanto más larga sea la antena, mayor será la resolución espacial. Desde un satélite en el espacio que opera a una longitud de onda de unos 5 cm (radar de banda C), para obtener una resolución espacial de 10 m, se necesitaría una antena de radar de unos 4.250 m de longitud.</p>
+<p>Una antena de ese tamaño no es práctica para un sensor de satélite en el espacio. Por eso, científicos e ingenieros han ideado una ingeniosa solución: <strong>la apertura sintética</strong>. En este concepto, una secuencia de adquisiciones de una antena más corta se combinan para simular una antena mucho mayor, proporcionando así datos de mayor resolución (<a href="#fig-sar_antena">Figure&nbsp;<span>4.1</span></a>)</p>
+<div id="fig-sar_antena" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/SARticle_first-fig_redone-06.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;4.1: Geometría de las observaciones utilizadas para formar la apertura sintética para el objetivo P en la posición a lo largo de la pista x = 0. Crédito: NASA SAR Handbook</figcaption>
+</figure>
+</div>
+</section>
+<section id="frecuencia-y-longitud-de-onda" class="level2 page-columns page-full" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="frecuencia-y-longitud-de-onda"><span class="header-section-number">4.3</span> Frecuencia y longitud de onda</h2>
+<p>Los sensores ópticos, como el Operational Land Imager (OLI) de Landsat y el Multispectral Instrument (MSI) de Sentinel-2, recogen datos en las porciones visible, infrarroja cercana e infrarroja de onda corta del espectro electromagnético. Los sensores de radar utilizan longitudes de onda más largas a escala de centímetros a metros, lo que les confiere propiedades especiales, como la capacidad de ver a través de las nubes (<a href="#fig-spectrum">Figure&nbsp;<span>4.2</span></a>).</p>
+<div id="fig-spectrum" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/SARticle_microwave_fig-05.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;4.2: El espectro electromagnético con las bandas de microondas en recuadro</figcaption>
+</figure>
+</div>
+<p>Las diferentes longitudes de onda del SAR suelen denominarse bandas, con designaciones de letras como <em>X, C, L y P</em>. En la tabla siguiente se indica la banda con la frecuencia asociada, la longitud de onda y la aplicación típica para esa banda.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Band</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Frequency</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Wavelength</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Typical.Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ka</td>
+<td style="text-align: left;">27–40 GHz</td>
+<td style="text-align: left;">1.1–0.8 cm</td>
+<td style="text-align: left;">Rarely used for SAR (airport surveillance)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">K</td>
+<td style="text-align: left;">18–27 GHz</td>
+<td style="text-align: left;">1.7–1.1 cm</td>
+<td style="text-align: left;">rarely used (H2O absorption)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ku</td>
+<td style="text-align: left;">12–18 GHz</td>
+<td style="text-align: left;">2.4–1.7 cm</td>
+<td style="text-align: left;">rarely used for SAR (satellite altimetry)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">X</td>
+<td style="text-align: left;">8–12 GHz</td>
+<td style="text-align: left;">3.8–2.4 cm</td>
+<td style="text-align: left;">High resolution SAR (urban monitoring,; ice and snow, little penetration into vegetation cover; fast coherence decay in vegetated areas)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">4–8 GHz</td>
+<td style="text-align: left;">7.5–3.8 cm</td>
+<td style="text-align: left;">SAR Workhorse (global mapping; change detection; monitoring of areas with low to moderate penetration; higher coherence); ice, ocean maritime navigation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">2–4 GHz</td>
+<td style="text-align: left;">15–7.5 cm</td>
+<td style="text-align: left;">Little but increasing use for SAR-based Earth observation; agriculture monitoring (NISAR will carry an S-band channel; expends C-band applications to higher vegetation density)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">L</td>
+<td style="text-align: left;">1–2 GHz</td>
+<td style="text-align: left;">30–15 cm</td>
+<td style="text-align: left;">Medium resolution SAR (geophysical monitoring; biomass and vegetation mapping; high penetration, InSAR)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P</td>
+<td style="text-align: left;">0.3–1 GHz</td>
+<td style="text-align: left;">100–30 cm</td>
+<td style="text-align: left;">Biomass. First p-band spaceborne SAR will be launched ~2020; vegetation mapping and assessment. Experimental SAR.</td>
+</tr>
+</tbody>
+</table>
 
 
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/sar_bands.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Ejemplos de imágenes SAR en frecuencias de banda C, L y P del sistema AIRSAR sobre bosques tropicales a lo largo del río Ja en Papúa Nueva Guinea que muestran las diferencias de penetración y los impactos de la estructura forestal y la humedad subyacente en las imágenes SAR de falso color compuesto (HH, HV, VV).</figcaption>
+</figure>
+</div>
+<p>La longitud de onda es una característica importante a tener en cuenta cuando se trabaja con SAR, ya que determina cómo interactúa la señal del radar con la superficie y hasta dónde puede penetrar una señal en un medio. Por ejemplo, un radar de banda X, que funciona a una longitud de onda de unos 3 cm, tiene muy poca capacidad para penetrar en el bosque de hoja ancha, por lo que interactúa principalmente con las hojas de la parte superior de la copa de los árboles. En cambio, una señal de banda L tiene una longitud de onda de unos 23 cm, con lo que consigue una mayor penetración en el bosque y permite una mayor interacción entre la señal del radar y las grandes ramas y troncos de los árboles. La longitud de onda no sólo influye en la profundidad de penetración en los bosques, sino también en otros tipos de cobertura terrestre, como el suelo y el hielo.</p>
+<p>Por ejemplo, científicos y arqueólogos están utilizando datos SAR para ayudar a “descubrir” ciudades perdidas e infraestructuras de tipo urbano ocultas a lo largo del tiempo por la densa vegetación o las arenas del desierto. Para más información sobre el uso del SAR en arqueología espacial, véanse las publicaciones del Observatorio de la Tierra de la NASA <a href="https://earthobservatory.nasa.gov/features/SpaceArchaeology">Peering through the Sands of Time</a> y <a href="https://earthobservatory.nasa.gov/images/90847/secrets-beneath-the-sand">Secrets beneath the Sand</a>.</p>
+</section>
+<section id="mecanismos-de-polarización-y-dispersión" class="level2 page-columns page-full" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="mecanismos-de-polarización-y-dispersión"><span class="header-section-number">4.4</span> Mecanismos de polarización y dispersión</h2>
+<p>El radar también puede recoger señales en diferentes polarizaciones, controlando la polarización analizada tanto en el trayecto de transmisión como en el de recepción. La polarización se refiere a la orientación del plano en el que oscila la onda electromagnética transmitida. Aunque la orientación puede producirse en cualquier ángulo, los sensores SAR suelen transmitir con polarización lineal. La polarización horizontal se indica con la letra <em>H</em>, y la vertical con la <em>V</em>.</p>
+<p>La ventaja de los sensores de radar es que la polarización de la señal puede controlarse con precisión tanto en la transmisión como en la recepción. Las señales emitidas en polarización vertical (V) y recibidas en polarización horizontal (H) se indicarían con una <em>VH</em>. Alternativamente, una señal emitida en horizontal (H) y recibida en horizontal (H) se indicaría con <em>HH</em>, y así sucesivamente (<a href="#fig-polarization">Figure&nbsp;<span>4.3</span></a>).</p>
+<div id="fig-polarization" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/polarization.png" class="img-fluid figure-img" width="300"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;4.3: Ondas electromagnéticas irradiadas al paisaje en orientaciones horizontal y vertical que proporcionan diferentes mediciones de polarización lineal.</figcaption>
+</figure>
+</div>
+<p>Examinando la intensidad de la señal de estas polarizaciones diferentes aporta información sobre la estructura de la superficie de la imagen, basada en los siguientes tipos de dispersión: superficie rugosa, volumen y doble rebote (<a href="#fig-polar_response">Figure&nbsp;<span>4.4</span></a>).</p>
+<div id="fig-polar_response" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/SARPolarization.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;4.4: La fuerte dispersión en HH indica un predominio de la dispersión de doble rebote (por ejemplo, vegetación con tallos, estructuras hechas por el hombre), mientras que la fuerte VV se relaciona con la dispersión de superficies rugosas (por ejemplo, suelo desnudo, agua), y las variaciones espaciales en la polarización dual indican la distribución de los dispersores de volumen (por ejemplo, vegetación y tipos de suelo de alta penetración como arena u otros suelos porosos secos). Créditos: NASA SAR Handbook.</figcaption>
+</figure>
+</div>
+<ul>
+<li>La dispersión de la superficie rugosa, como la causada por el suelo desnudo o el agua, es más sensible a la dispersión VV.</li>
+<li>La dispersión de volumen, por ejemplo, causada por las hojas y ramas de un bosque, es más sensible a datos de polarización cruzada como VH o HV.</li>
+<li>El último tipo de dispersión, el doble rebote, está causado por edificios, troncos de árboles o vegetación inundada y es más sensible a una señal polarizada HH.</li>
+</ul>
+<p>Es importante señalar que la cantidad de señal atribuida a los diferentes tipos de dispersión puede cambiar en función de la longitud de onda, ya que ésta modifica la profundidad de penetración de la señal. Por ejemplo, una señal de banda <em>C</em> sólo penetra en las capas superiores del dosel de un bosque y, por lo tanto, experimentará principalmente dispersión de rugosidad mezclada con una cantidad limitada de dispersión de volumen. Sin embargo, una señal de banda <em>L</em> o de banda <em>P</em> tendrá una penetración mucho más profunda y, por lo tanto, experimentará una dispersión de volumen fuertemente aumentada, así como cantidades crecientes de dispersión de doble rebote causada por el tronco del árbol (<a href="#fig-tree_SAR">Figure&nbsp;<span>4.5</span></a>).</p>
+<div id="fig-tree_SAR" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/SARtree_figure2.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">Figure&nbsp;4.5: Sensibilidad de las mediciones SAR a la estructura del bosque y a la penetración en el dosel en diferentes longitudes de onda utilizadas para las observaciones por teledetección de la superficie terrestre desde el aire o el espacio. Credit: NASA SAR Handbook.</figcaption>
+</figure>
+</div>
+</section>
+<section id="interferometría" class="level2 page-columns page-full" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="interferometría"><span class="header-section-number">4.5</span> Interferometría</h2>
+<p>Los datos SAR también pueden permitir un método de análisis denominado interferometría o InSAR. InSAR utiliza la información de fase registrada por el sensor para medir la distancia del sensor al objetivo. Cuando se realizan al menos dos observaciones del mismo objetivo, la distancia, con información geométrica adicional del sensor, puede utilizarse para medir los cambios en la topografía de la superficie terrestre. Estas mediciones son muy precisas (hasta el nivel de centímetros) y pueden utilizarse para identificar zonas de deformación debidas a fenómenos como erupciones volcánicas y terremotos.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/interferogram_Oaxaca2018.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption margin-caption">El interferograma de los datos SAR de Sentinel-1 adquiridos el 17/02/2018 y el 05/02 muestra el deslizamiento de la falla sísmica en una falla de empuje de subducción que causa hasta 40 cm de elevación de la superficie del suelo. El movimiento se ha contorneado con contornos de color de 9 cm, también conocidos como franjas. Crédito: NASA Disasters Program.</figcaption>
+</figure>
+</div>
+<p>Una señal SAR contiene información de amplitud y fase. La amplitud es la fuerza de la respuesta del radar y la fase es la fracción de un ciclo completo de onda sinusoidal (una sola longitud de onda SAR). La fase de la imagen SAR viene determinada principalmente por la distancia entre la antena del satélite y los objetivos terrestres.</p>
+<p>El SAR interferométrico (InSAR) explota la diferencia de fase entre dos observaciones SAR radar complejas de la misma zona, tomadas desde posiciones de sensor ligeramente diferentes, y extrae información de distancia sobre el terreno terrestre.</p>
+<p>Combinando la fase de estas dos imágenes tras el coregistro, se puede generar un interferograma en el que la fase está altamente correlacionada con la topografía del terreno y se pueden cartografiar los patrones de deformación. Si se elimina de los interferogramas el desplazamiento de fase relacionado con la topografía, la diferencia entre los productos resultantes mostrará los patrones de deformación de la superficie ocurridos entre las dos fechas de adquisición. Esta metodología se denomina interferometría diferencial (DInSAR).</p>
+</section>
+<section id="referencias" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="referencias"><span class="header-section-number">4.6</span> Referencias:</h2>
+<ul>
+<li><a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a></li>
+<li><a href="https://gis1.servirglobal.net/TrainingMaterials/SAR/ch5.pdf" class="uri">https://gis1.servirglobal.net/TrainingMaterials/SAR/ch5.pdf</a></li>
+</ul>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

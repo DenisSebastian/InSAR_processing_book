@@ -1,37 +1,32 @@
-# Introducción 
+# Introducción
 
+Este libro tiene por por objetivo ir documentando y comunicando los avances en el repoceso de replicar el flujo de trabajado de corrección de imagenes tipo Radar de Apertura Sintética (SAR) en python en el proceso de interferometría (InSAR).
 
+Los datos SAR también pueden permitir un método de análisis denominado interferometría o InSAR. InSAR utiliza la información de fase registrada por el sensor para medir la distancia del sensor al objetivo. Cuando se realizan al menos dos observaciones del mismo objetivo, la distancia, con información geométrica adicional del sensor, puede utilizarse para medir los cambios en la topografía de la superficie terrestre. Estas mediciones son muy precisas (hasta el nivel de centímetros) y pueden utilizarse para identificar zonas de deformación debidas a fenómenos como erupciones volcánicas y terremotos.
 
-Este libro tiene por por objetivo ir documentando y comunicando los avances en el repoceso de replicar el flujo de trabajado de corrección de imagenes tipo Radar de Apertura Sintética (SAR) en python en el proceso de interferometría. 
-
-
+![Interferogram from Sentinel-1 SAR data acquired 2018/02/17 and 02/05 shows earthquake fault slip on a subduction thrust fault causing up to 40 cm of uplift of the ground surface. The motion has been contoured with 9 cm color contours, also known as fringes. Credit: NASA Disasters Program.](images/interferogram_Oaxaca2018.jpg){fig-align="center"}
 
 **Preguntas:**
 
-
-- Problema 
-- Objetivos
-- Definición de "Bursts"
-- Definición de "GA"
-- Definición de "SLC"
-
-
-
+-   Problema
+-   Objetivos
+-   Definición de "Bursts"
+-   Definición de "GA"
+-   Definición de "SLC"
 
 **TODO:**
 
-- Documentación inSAR
-- Documentar las correcciones
-- Investigar 
-  - Co-registration 
-  - "SBAS" network
-  - Unsupervised algorithm like snaphu of MCF
-  - Pixel-wise process
-
-- Entender el problema
-- Definir Objetivos
-- Crear Pipeline con imágenes
-- Crear Esquema de tareas
-- Preparar Glosario
-- Investigar de sobre los softwares
-- Variables book (productos satelitales, softwares, etc)
+-   Documentación inSAR
+-   Documentar las correcciones
+-   Investigar
+    -   Co-registration
+    -   "SBAS" network
+    -   Unsupervised algorithm like snaphu of MCF
+    -   Pixel-wise process
+-   Entender el problema
+-   Definir Objetivos
+-   Crear Pipeline con imágenes
+-   Crear Esquema de tareas
+-   Preparar Glosario
+-   Investigar de sobre los softwares
+-   Variables book (productos satelitales, softwares, etc)

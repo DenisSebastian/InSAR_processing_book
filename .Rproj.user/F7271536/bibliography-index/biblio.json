@@ -27,6 +27,178 @@
             "title": "Literate programming",
             "type": "article-journal",
             "volume": "27"
+        },
+        {
+            "DOI": "10.3390/rs12152430",
+            "URL": "https://doi.org/10.3390%2Frs12152430",
+            "author": [
+                {
+                    "family": "Lazecký",
+                    "given": "Milan"
+                },
+                {
+                    "family": "Spaans",
+                    "given": "Karsten"
+                },
+                {
+                    "family": "González",
+                    "given": "Pablo J."
+                },
+                {
+                    "family": "Maghsoudi",
+                    "given": "Yasser"
+                },
+                {
+                    "family": "Morishita",
+                    "given": "Yu"
+                },
+                {
+                    "family": "Albino",
+                    "given": "Fabien"
+                },
+                {
+                    "family": "Elliott",
+                    "given": "John"
+                },
+                {
+                    "family": "Greenall",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Hatton",
+                    "given": "Emma"
+                },
+                {
+                    "family": "Hooper",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Juncu",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "McDougall",
+                    "given": "Alistair"
+                },
+                {
+                    "family": "Walters",
+                    "given": "Richard J."
+                },
+                {
+                    "family": "Watson",
+                    "given": "C. Scott"
+                },
+                {
+                    "family": "Weiss",
+                    "given": "Jonathan R."
+                },
+                {
+                    "family": "Wright",
+                    "given": "Tim J."
+                }
+            ],
+            "container-title": "Remote Sensing",
+            "id": "Lazeck_2020",
+            "issue": "15",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        7
+                    ]
+                ]
+            },
+            "page": "2430",
+            "publisher": "MDPI AG",
+            "title": "LiCSAR: An automatic InSAR tool for measuring and monitoring tectonic and volcanic activity",
+            "title-short": "LiCSAR",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.3390/rs12030424",
+            "URL": "https://doi.org/10.3390%2Frs12030424",
+            "author": [
+                {
+                    "family": "Morishita",
+                    "given": "Yu"
+                },
+                {
+                    "family": "Lazecky",
+                    "given": "Milan"
+                },
+                {
+                    "family": "Wright",
+                    "given": "Tim"
+                },
+                {
+                    "family": "Weiss",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Elliott",
+                    "given": "John"
+                },
+                {
+                    "family": "Hooper",
+                    "given": "Andy"
+                }
+            ],
+            "container-title": "Remote Sensing",
+            "id": "Morishita_2020",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        1
+                    ]
+                ]
+            },
+            "page": "424",
+            "publisher": "MDPI AG",
+            "title": "LiCSBAS: An open-source InSAR time series analysis package integrated with the LiCSAR automated sentinel-1 InSAR processor",
+            "title-short": "LiCSBAS",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.1029/2017jb015305",
+            "URL": "https://doi.org/10.1029%2F2017jb015305",
+            "author": [
+                {
+                    "family": "Yu",
+                    "given": "Chen"
+                },
+                {
+                    "family": "Li",
+                    "given": "Zhenhong"
+                },
+                {
+                    "family": "Penna",
+                    "given": "Nigel T."
+                },
+                {
+                    "family": "Crippa",
+                    "given": "Paola"
+                }
+            ],
+            "container-title": "Journal of Geophysical Research: Solid Earth",
+            "id": "Yu_2018",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        10
+                    ]
+                ]
+            },
+            "page": "9202-9222",
+            "publisher": "American Geophysical Union (AGU)",
+            "title": "Generic atmospheric correction model for interferometric synthetic aperture radar observations",
+            "type": "article-journal",
+            "volume": "123"
         }
     ],
     "project_biblios": [

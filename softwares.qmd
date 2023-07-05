@@ -9,6 +9,7 @@ title: "Softwares"
 The SNAP architecture is ideal for Earth observation (EO) processing and analysis due to the following technological innovations: extensibility, portability, modular rich client platform, generic EO data abstraction, tiled memory management, and a graph processing framework.
 SNAP and the individual Sentinel Toolboxes support numerous sensors other than Sentinel sensors.
 
+<http://www.gisandbeers.com/snap-analisis-imagenes-satelite-sentinel/>
 
 
 [GAMMA](https://www.gamma-rs.ch/software):
